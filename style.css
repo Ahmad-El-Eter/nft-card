@@ -1,0 +1,163 @@
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+ */
+
+ :root{
+   /* Colors */
+   --Soft-blue: hsl(215, 51%, 70%);
+   --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+
+   --main-bg: hsl(217, 54%, 11%);
+   --card-bg: hsl(216, 50%, 16%);
+   --line-color: hsl(215, 32%, 27%);
+   --White: hsl(0, 0%, 100%);
+
+   /* Font weights */
+
+   --title-weight: 600;
+   --text-weight: 300;
+   --link-weight: 400;
+ }
+
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "poppins", sans-serif;
+   text-decoration: none;
+ }
+
+ body{
+   background-color: var(--main-bg);
+ }
+
+ a{
+   color: var(--Cyan);
+ }
+
+ hr{
+   width: 90%;
+   margin: 2rem auto 0 auto;
+   opacity: 10%
+ }
+
+ .container{
+   height: 100vh;
+
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+.card{
+  background: var(--card-bg);
+  width: 375px;
+  border-radius: 1rem;
+}
+
+.art{
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem 0 0 0;
+  cursor: pointer;
+}
+
+.art:hover::before{
+  content:'';
+  background: url(images/icon-view.svg) no-repeat center;
+  background-color: hsla(178, 100%, 50%, 0.5);;
+  opacity: 100%;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 320px;
+  height: 319px;
+  border-radius: .5rem;
+}
+
+ .art img{   
+  display: block;
+  margin: auto;
+  width: 85%;
+  border-radius: .5rem;
+ }
+
+ .section{
+   padding: 1.5rem 0 0 2rem;
+ }
+
+ .text a{
+   font-weight: var(--title-weight);
+ }
+
+ .text p{
+   padding: 1rem .5rem 0 0;
+   color: var(--White);
+   font-weight: var(--text-weight);
+ }
+
+ .links{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 2rem ;
+   padding-bottom: 0;
+ }
+
+ .links a{
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+ }
+
+ .links p{
+   color: var(--White);
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+ }
+
+ .avatar{
+   display: flex;
+   align-items: center;
+   padding: 1.5rem;
+   gap: 2rem;
+ }
+
+ .avatar img{
+   width: 50px;
+ }
+
+ .avatar p{
+   color: var(--White);
+ }
