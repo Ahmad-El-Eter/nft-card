@@ -1,5 +1,5 @@
 # Frontend Mentor - NFT preview card component
-# https://ahmad-el-eter.github.io/age-calculator/
+# https://ahmad-el-eter.github.io/nft-card/
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
